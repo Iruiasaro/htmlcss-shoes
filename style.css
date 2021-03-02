@@ -8,6 +8,9 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+header {
+    background-color: rgb(245, 20, 20);}
+
 nav {
     text-align: right;
     padding: 20px;
@@ -18,7 +21,7 @@ nav ul li {
     display: inline-block;
     width: 15px;
     text-align: center;
-    background-color: rgb(131, 127, 127);    border-radius: 50%;
+    background-color: rgb(240, 240, 240);    border-radius: 50%;
     margin-left: 10px;
     line-height: 5px;
     font-size: 8px;
@@ -29,3 +32,29 @@ nav ul li {
 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
+}
+
+.red-section {
+    background-color: rgb(245, 20, 20);
+}
+
+.green-section {
+    background-color: rgb(64, 109, 0);
+}
+
+.yellow-section {
+    background-color: rgb(255, 255, 43);
+}
+
+
+.yellow-title {
+    color: rgb(255, 255, 43);
+    text-align: center;
+    font-weight: 900;
+}
+
+.green-title {
+    color: rgb(64, 109, 0);
+    text-align: center;
+    font-weight: 900;
+}
