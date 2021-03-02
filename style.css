@@ -5,26 +5,28 @@
 }
 
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Calibri', sans-serif 
 }
 
-header {
-    background-color: rgb(245, 20, 20);}
-
+    
+/* impostazione e fissaggio navigazione */
 nav {
-    text-align: right;
     padding: 20px;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    right: 0px;
 }
 
 nav ul li {
     list-style-type: none;
     display: inline-block;
-    width: 15px;
+    width: 18px;
     text-align: center;
-    background-color: rgb(240, 240, 240);    border-radius: 50%;
+    background-color: rgb(250, 247, 247);    border-radius: 50%;
     margin-left: 10px;
     line-height: 5px;
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 900;
     padding: 5px;
 }
@@ -34,27 +36,49 @@ a {
     color: rgb(0, 0, 0);
 }
 
+/* impostazioni background sezioni */
 .red-section {
     background-color: rgb(245, 20, 20);
 }
 
 .green-section {
-    background-color: rgb(64, 109, 0);
+    background-color: rgb(1, 133, 1);
 }
 
 .yellow-section {
     background-color: rgb(255, 255, 43);
 }
 
-
-.yellow-title {
-    color: rgb(255, 255, 43);
-    text-align: center;
-    font-weight: 900;
+/* ridimensionamento sezioni */
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
 }
 
-.green-title {
-    color: rgb(64, 109, 0);
+section .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.shoes-img {
+    width: 100%;
+}
+
+/* allineamento e colorazione testo sotto immagini */
+.wrap {
     text-align: center;
     font-weight: 900;
+    font-size: 55px;
+    padding-bottom: 30px;
+}
+
+.wrap.yellow-title {
+    color: rgb(255, 255, 43);
+}
+
+.wrap.green-title {
+    color: rgb(1, 133, 1);
 }
